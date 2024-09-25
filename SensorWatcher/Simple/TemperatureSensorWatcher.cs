@@ -1,21 +1,19 @@
-namespace SensorExample;
+namespace SensorExample.Watcher;
 
 public class TemperatureSensorWatcher
 {
-    private readonly UserHttpNotifier notifier;
+    private readonly IUserNotifier notifier;
 
-    private readonly XiaomiTemperatureSensor sensor;
+    private readonly ITemperatureSensor sensor;
 
     private int maxDegrees;
 
-    public TemperatureSensorWatcher()
+    public TemperatureSensorWatcher(IUserNotifier notifier,  ITemperatureSensor sensor)
     {
-        notifier = new UserHttpNotifier();
-        notifier.SetTimeOutAndRetries(1200, 20);
-
-        sensor = new XiaomiTemperatureSensor();
+        this.notifier = notifier;
+        this.sensor = sensor;
     }
-
+    
     public void SetMaximumTemperature(int degrees)
     {
         maxDegrees = degrees;
@@ -29,4 +27,15 @@ public class TemperatureSensorWatcher
             notifier.NotifyAboutTemperature(degrees, maxDegrees);
         }
     }
+}
+
+public interface IUserNotifier
+{
+    bool IsReady { get; }
+    void NotifyAboutTemperature(int degrees, int max);
+}
+
+public interface ITemperatureSensor
+{
+    int CurrentTemperature { get; }
 }

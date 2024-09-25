@@ -1,4 +1,4 @@
-namespace SensorExample;
+namespace SensorExample.Http;
 
 
 public class UserHttpNotifier 

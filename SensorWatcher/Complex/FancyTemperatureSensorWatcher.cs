@@ -1,15 +1,21 @@
 namespace SensorExample;
 
+using Watcher;
+
 public class FancyTemperatureSensorWatcher
 {
-    private readonly ViberUserNotifier viberUserNotifier = new();
-
-    private readonly SmsUserNotifier smsUserNotifier = new();
+    private readonly List<IUserNotifier> notifiers;
     
-    private readonly XiaomiTemperatureSensor sensor = new();
+    private readonly ITemperatureSensor sensor;
     
     private int maxDegrees;
-    
+
+    public FancyTemperatureSensorWatcher(List<IUserNotifier> notifiers, ITemperatureSensor sensor)
+    {
+        this.sensor = sensor;
+        this.notifiers = notifiers;
+    }
+
     public void SetMaximumTemperature(int degrees)
     {
         maxDegrees = degrees;
@@ -20,14 +26,7 @@ public class FancyTemperatureSensorWatcher
         var degrees = sensor.CurrentTemperature;
         if (degrees >= maxDegrees)
         {
-            if (viberUserNotifier.IsOnline)
-            {
-                viberUserNotifier.NotifyAboutTemperature(degrees, maxDegrees);
-            }
-            else
-            {
-                smsUserNotifier.NotifyAboutTemperature(degrees, maxDegrees);
-            }
+            notifiers.First(notifier => notifier.IsReady).NotifyAboutTemperature(degrees, maxDegrees);
         }
     }
 }

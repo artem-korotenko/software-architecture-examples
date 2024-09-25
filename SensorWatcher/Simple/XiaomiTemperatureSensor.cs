@@ -1,6 +1,8 @@
 namespace SensorExample;
 
-public class XiaomiTemperatureSensor
+using Watcher;
+
+public class XiaomiTemperatureSensor : ITemperatureSensor
 {
     private readonly Random random = new Random();
 

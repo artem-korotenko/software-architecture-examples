@@ -1,5 +1,7 @@
 namespace SensorExample;
 
+using Sensor;
+
 public class FancyTemperatureSensorWatcher
 {
     private readonly ViberUserNotifier viberUserNotifier = new();

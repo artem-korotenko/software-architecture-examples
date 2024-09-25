@@ -1,5 +1,8 @@
 namespace SensorExample;
 
+using Http;
+using Sensor;
+
 public class TemperatureSensorWatcher
 {
     private readonly UserHttpNotifier notifier;

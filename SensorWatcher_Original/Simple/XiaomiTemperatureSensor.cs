@@ -1,4 +1,5 @@
-namespace SensorExample;
+namespace SensorExample.Sensor;
+
 
 public class XiaomiTemperatureSensor
 {
