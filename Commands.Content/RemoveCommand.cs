@@ -2,7 +2,7 @@ namespace Commands.Content;
 
 using Tasks;
 
-public class RemoveCommand : Command
+public class RemoveCommand : InputCommand
 {
     private readonly ITaskStorage taskStorage;
 

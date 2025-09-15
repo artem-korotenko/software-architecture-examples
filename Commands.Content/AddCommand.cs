@@ -2,7 +2,7 @@ namespace Commands.Content;
 
 using Tasks;
 
-public class AddCommand : Command
+public class AddCommand : InputCommand
 {
     private readonly ITaskStorage taskStorage;
 

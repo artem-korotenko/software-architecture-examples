@@ -1,0 +1,16 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3338405a_002Df48f_002D42b0_002Dbdc0_002Df956a907e9db/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="OrderIsProcessed_WhenPaymentProcessed #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::E9946746-870A-4789-B424-4F2609B8E938::net8.0::ExampleTests.SubstituteTests.OrderIsProcessed_WhenPaymentProcessed&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c7495bb9_002De092_002D4428_002D8af9_002D6141f2dc1b6a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OrderIsProcessed_WhenPaymentProcessed" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::E9946746-870A-4789-B424-4F2609B8E938::net8.0::ExampleTests.SubstituteTests.OrderIsProcessed_WhenPaymentProcessed&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fe142263_002Dde6e_002D44cb_002D8b7b_002D6506113e0702/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="OrderIsProcessed_WhenPaymentProcessed #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::E9946746-870A-4789-B424-4F2609B8E938::net8.0::ExampleTests.SubstituteTests.OrderIsProcessed_WhenPaymentProcessed&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
